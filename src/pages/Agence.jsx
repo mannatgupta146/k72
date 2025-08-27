@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Agents = () => {
+const Agence = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const Agents = () => {
   )
 }
 
-export default Agents
+export default Agence
