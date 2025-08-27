@@ -6,7 +6,7 @@ import Agence from './pages/Agence.jsx'
 
 const App = () => {
   return (
-    <div>
+    <div className='overflow-x-hidden'>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/projects' element={<Projects />} />
