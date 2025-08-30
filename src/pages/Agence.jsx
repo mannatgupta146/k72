@@ -30,7 +30,6 @@ const Agence = () => {
     gsap.to(imageDivRef.current,{
       scrollTrigger:{
         trigger: imageDivRef.current,
-        markers: true,
         start: "top 30%",
         end: 'top -100%',
         scrub: true,
