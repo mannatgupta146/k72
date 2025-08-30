@@ -3,13 +3,15 @@ import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home.jsx'
 import Projects from './pages/Projects.jsx'
 import Agence from './pages/Agence.jsx'
+import Navbar from './components/Navigation/Navbar.jsx'
+
 
 
 const App = () => {
 
   return (
     <div className='overflow-x-hidden'>
-
+      <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/projects' element={<Projects />} />
