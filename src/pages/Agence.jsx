@@ -2,7 +2,8 @@ import React from 'react'
 
 const Agence = () => {
   return (
-    <div className='section1'>
+    <div>
+       <div className='section1'>
       <div className='h-[20vw] w-[15vw] rounded-4xl overflow-hidden absolute top-36 left-[31vw]'>
         <img className='h-full w-full object-cover' src="https://k72.ca/uploads/teamMembers/Carl_480x640-480x640.jpg" alt="" />
       </div>
@@ -18,6 +19,11 @@ const Agence = () => {
           but not influence that goes the distance. We bring that perspective to every brand story we help tell.</p>
       </div>
       </div>
+    </div>
+
+    <div className="section2 h-screen">
+
+    </div>
     </div>
   )
 }
