@@ -10,3 +10,35 @@
     src: url(../public/fonts/Lausanne-500.woff2);
 }
 
+.moveX{
+    animation-name: moveAnimation;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.moveLink {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.moveLink:hover {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.link:hover .moveLink{
+    opacity: 1;
+}
+
+@keyframes moveAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+    
+}
