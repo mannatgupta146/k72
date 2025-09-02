@@ -1,67 +1,57 @@
-import React, { useRef } from 'react'
-import { useGSAP } from '@gsap/react'
-import gsap from 'gsap/all'
-import { useLocation } from 'react-router-dom'
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
+import { useRef } from 'react';
+import { useLocation } from 'react-router-dom';
 
-const Stair = (props) => {
-
+const Stairs = (props) => {
   const currentPath = useLocation().pathname;
-  const pageRef = useRef(null);
-    
   const stairParentRef = useRef(null);
+  const pageRef = useRef(null);
 
-  useGSAP(function(){
-    const tl = gsap.timeline();
+  useGSAP(() => {
+    const tl = gsap.timeline({ defaults: { ease: "power3.inOut" } });
 
-    tl.from(stairParentRef.current,{
-      display: 'block'
-    })
+    tl.set(stairParentRef.current, { display: 'block' })
+      .from('.stair', {
+        height: 0,
+        stagger: { amount: -0.25 },
+        duration: 0.5
+      })
+      .to('.stair', {
+        y: '100%',
+        stagger: { amount: -0.25 },
+        duration: 0.6
+      })
+      .set(stairParentRef.current, { display: 'none' })
+      .set('.stair', { y: '0%' });
 
-    tl.from('.stair',{
-      height: 0,
-      stagger: {
-        amount: -0.3,
+    gsap.fromTo(
+      pageRef.current,
+      { opacity: 0, scale: 1.1 },
+      {
+        opacity: 1,
+        scale: 1,
+        delay: 1.2,
+        duration: 0.8,
+        ease: "power2.out"
       }
-    })
-    
-    tl.to('.stair',{
-      y: '100%',
-      stagger: {
-        amount: -0.3,
-      }
-    })
-
-    tl.to(stairParentRef.current,{
-      display: 'none'
-    })
-
-    tl.to('.stair',{
-      y: '0',
-    })
-
-    gsap.from(pageRef.current,{
-        opacity: 0,
-        delay: 2.5,
-        scale: 1.2
-    })
-  },[currentPath])
+    );
+  }, [currentPath]);
 
   return (
     <div>
-        <div ref={stairParentRef} className='h-screen w-full fixed top-0 z-20'>
-      <div className='h-full w-ull flex'>
-        <div className='stair h-full w-1/5 bg-black'></div>
-        <div className='stair h-full w-1/5 bg-black'></div>
-        <div className='stair h-full w-1/5 bg-black'></div>
-        <div className='stair h-full w-1/5 bg-black'></div>
-        <div className='stair h-full w-1/5 bg-black'></div>
+      <div ref={stairParentRef} className="h-screen w-full fixed z-20 top-0 pointer-events-none">
+        <div className="h-full w-full flex">
+          <div className="stair h-full w-1/5 bg-black"></div>
+          <div className="stair h-full w-1/5 bg-black"></div>
+          <div className="stair h-full w-1/5 bg-black"></div>
+          <div className="stair h-full w-1/5 bg-black"></div>
+          <div className="stair h-full w-1/5 bg-black"></div>
+        </div>
       </div>
+      <div ref={pageRef}>{props.children}</div>
     </div>
-    <div ref={pageRef}>
-        {props.children}
-    </div>
-    </div>
-  )
-}
+  );
+};
 
-export default Stair
+export default Stairs;
