@@ -167,7 +167,6 @@ const FullScreenNav = () => {
                                 <img className='lg:h-30 h-14 rounded-full shrink-0 lg:w-80 w-32 object-cover' src="https://k72.ca/uploads/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290-640x290.jpg" alt="" />
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
