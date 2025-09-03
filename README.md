@@ -46,31 +46,11 @@ The project is deployed on **Render**.
 - **Render** — Fast, reliable, and scalable deployment platform  
 
 
-## 🎥 Animations & Transitions  
-
-This project delivers **smooth, immersive, and visually stunning animations** powered by **GSAP** and **ScrollTrigger**, combined with a **unique staircase reload effect** for seamless page transitions.
-
-### ✨ Key Highlights:
-- 🎞️ **GSAP + ScrollTrigger**  
-  - High-performance animations optimized for smooth rendering  
-  - Scroll-based triggers for dynamic and interactive effects  
-  - Lazy-loading effects for better performance and user experience  
-  - Flexible timeline-based animations for precise control  
-
-- 🌀 **Staircase Reload Animation**  
-  - Unique **page transition effect** inspired by the original K72 website  
-  - Creates a **cinematic browsing experience** by animating content between route changes  
-  - Adds a **layered, immersive feel** that keeps users engaged  
-
-- ⚡ **Performance Optimizations**  
-  - Hardware-accelerated animations for buttery-smooth visuals  
-  - Optimized GSAP timelines to avoid unnecessary reflows and repaints  
-  - Conditional animation loading for better speed and responsiveness  
-
-- 🎯 **User Experience Enhancements**  
-  - Subtle hover and parallax effects for improved interactivity  
-  - Smooth easing curves that make transitions feel **natural**  
-  - Responsive animations that adapt beautifully across devices
+## ✨ Highlights:
+- 🎞️ **GSAP + ScrollTrigger** → High-performance, scroll-based, and timeline-controlled animations  
+- 🌀 **Staircase Reload Animation** → Cinematic page transitions for an engaging experience  
+- ⚡ **Optimized Performance** → Hardware-accelerated, lazy-loaded, and smooth rendering  
+- 🎯 **Enhanced UX** → Subtle hover, parallax effects, and responsive animations across devices  
 
 ## 🤝 Contribution  
 
@@ -85,9 +65,8 @@ If you'd like to improve **K72** or add new features, feel free to contribute.
 
 3. **Create a new branch** for your feature/fix
 
-   ```bash
-   git checkout -b feature-name
-   ```
+   ```git checkout -b feature-name```
+
 4. **Make your changes** and **commit**
 
    ```git commit -m "Added a new feature"```
