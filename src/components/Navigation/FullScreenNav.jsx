@@ -97,8 +97,8 @@ const FullScreenNav = () => {
                     </div>
                 </div>
                 <div >
-                    <div className='link mt-20 origin-top relative border-t-1 border-white'>
-                        <h1 className='font-[font2] text-5xl lg:text-[6.5vw] text-center lg:leading-[0.8] lg:pt-10 pt-3 uppercase'>Work</h1>
+                    <div className='link lg:-mt-5 mt-25 origin-top relative border-t-1 border-white'>
+                        <h1 className='font-[font2] text-5xl lg:text-[6.5vw] text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>Work</h1>
                         <div className='moveLink absolute text-black flex top-0 bg-[#D3FD50]'>
                             <div className='moveX flex items-center'>
                                 <h2 className='whitespace-nowrap font-[font2] lg:text-[6.5vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>See Everything</h2>
@@ -116,7 +116,7 @@ const FullScreenNav = () => {
 
                     </div>
                     <div className='link origin-top relative border-t-1 border-white'>
-                        <h1 className='font-[font2] text-5xl lg:text-[6.5vw] text-center lg:leading-[0.8] lg:pt-10 pt-3 uppercase'>Agency</h1>
+                        <h1 className='font-[font2] text-5xl lg:text-[6.5vw] text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>Agency</h1>
                         <div className='moveLink absolute text-black flex top-0 bg-[#D3FD50]'>
                             <div className='moveX flex items-center'>
                                 <h2 className='whitespace-nowrap font-[font2] lg:text-[6.5vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>Know Us</h2>
@@ -134,7 +134,7 @@ const FullScreenNav = () => {
 
                     </div>
                     <div className='link origin-top relative border-t-1 border-white'>
-                        <h1 className='font-[font2] text-5xl lg:text-[6.5vw] text-center lg:leading-[0.8] lg:pt-10 pt-3 uppercase'>Contact</h1>
+                        <h1 className='font-[font2] text-5xl lg:text-[6.5vw] text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>Contact</h1>
                         <div className='moveLink absolute text-black flex top-0 bg-[#D3FD50]'>
                             <div className='moveX flex items-center'>
                                 <h2 className='whitespace-nowrap font-[font2] lg:text-[6.5vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>Send us a message</h2>
@@ -152,7 +152,7 @@ const FullScreenNav = () => {
 
                     </div>
                     <div className='link origin-top relative border-y-1 border-white'>
-                        <h1 className='font-[font2] text-5xl lg:text-[6.5vw] text-center lg:leading-[0.8] lg:pt-10 pt-3 uppercase'>Blog</h1>
+                        <h1 className='font-[font2] text-5xl lg:text-[6.5vw] text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>Blog</h1>
                         <div className='moveLink absolute text-black flex top-0 bg-[#D3FD50]'>
                             <div className='moveX flex items-center'>
                                 <h2 className='whitespace-nowrap font-[font2] lg:text-[6.5vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>Read Articles</h2>
