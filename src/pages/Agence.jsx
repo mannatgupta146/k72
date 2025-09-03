@@ -58,16 +58,16 @@ const Agence = () => {
     
     <div>
        <div className='section1'>
-      <div ref={imageDivRef} className='h-[20vw] w-[15vw] rounded-4xl overflow-hidden absolute top-[50vh] left-[31vw]'>
+      <div ref={imageDivRef} className='lg:h-[20vw] h-[50vw] lg:w-[15vw] w-[43vw] lg:rounded-4xl rounded-2xl overflow-hidden absolute lg:top-[50vh] top-[30vh] lg:left-[31vw] left-[29vw] '>
         <img ref={imageRef} className='h-full w-full object-cover' src="https://k72.ca/uploads/teamMembers/Carl_480x640-480x640.jpg" alt="" />
       </div>
 
       <div className='relative font-[font2] '>
-      <div className='mt-[69vh]'>
-        <h1 className="text-[18vw] uppercase leading-[17vw] text-center" > SEVEN7Y <br /> TWO</h1>
+      <div className='lg:mt-[69vh] mt-[58vh]'>
+        <h1 className="lg:text-[18vw] text-[22vw] uppercase lg:leading-[17vw] text-center" > SEVEN7Y <br /> TWO</h1>
       </div>
-      <div className='pl-[40%] mt-20'>
-        <p className='text-5xl'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      <div className='lg:pl-[40%] pl-[10%]  lg:mt-20 mt-22'>
+        <p className='lg:text-5xl text-2xl'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
           We’re inquisitive and open-minded, and we make sure creativity crowds out ego from every corner. 
           A brand is a living thing, with values, a personality and a story. If we ignore that, we can achieve short-term success, 
           but not influence that goes the distance. We bring that perspective to every brand story we help tell.</p>
@@ -75,9 +75,6 @@ const Agence = () => {
       </div>
     </div>
 
-    <div className="section2 h-screen">
-
-    </div>
     </div>
   )
 }
