@@ -6,7 +6,7 @@ const HomeBottomText = () => {
   return (
     <div className='font-[font2] flex items-center justify-center lg:gap-7 gap-3'>
 
-      <p className='absolute lg:w-[17vw] w-67 lg:right-6 right-0 bottom-30  lg:bottom-29 font-[font1] lg:text-lg text-1xl lg:leading-relaxed leading-tight'>
+      <p className='absolute lg:w-[17vw] w-56 lg:right-20 right-2 bottom-28  lg:bottom-28 font-[font1] lg:text-lg text-xs lg:leading-relaxed leading-relaxed'>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
        K72 is an agency that builds brands from every angle. 
        Today, tomorrow and years from now. We think the best sparks fly when comfort zones get left behind and friction infuses our strategies, 
